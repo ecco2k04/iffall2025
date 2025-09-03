@@ -1,0 +1,32 @@
+body {
+            background-color: rgb(18, 18, 18);
+            color: rgb(251, 198, 255);
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+.stanza{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.verse-type{
+    font-weight: bold;
+    font-style: italic;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(251, 198, 255);
+
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+
+}
