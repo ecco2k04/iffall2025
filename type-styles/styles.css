@@ -1,0 +1,123 @@
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(153, 0, 0);
+    padding: 3em 3em;
+    text-align: left;
+}
+
+
+aside {
+    text-align: right;
+}
+
+.title {
+    font-family: "Crimson Text", serif;
+    font-size: 2.5em;
+    text-align: left;
+}
+
+
+section {
+    margin: 0 auto;
+    max-width: 38em;
+    padding: 0 1em;
+}
+
+article {
+    margin-bottom: 2em;
+    padding: 1em 3em;
+}
+
+h3 {
+    font-size: 0.8em;
+    color: rgb(153, 0, 0);
+}
+
+
+p{ 
+    font-family: "Crimson Text";
+}
+
+/* yeah!!! */
+
+
+.squeeze {
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: -0.1em;
+}
+
+.stretch {
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.1em;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.overline {
+  text-decoration: overline;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.crimson-text-regular {
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.crimson-text-semibold {
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.crimson-text-bold {
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.crimson-text-regular-italic {
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.crimson-text-semibold-italic {
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.crimson-text-bold-italic {
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  font-style: italic;
+}
