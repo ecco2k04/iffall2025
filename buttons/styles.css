@@ -1,37 +1,4 @@
-/* COCA COLA */
 
-
-#btn_coca_cola img {
-    display: inline-block;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 50px;
-}
-.fa-solid.fa-droplet {
-    position: relative;
-    top: 40px;
-    left: 25px;
-    opacity: 0;
-    color: #651414;
-    scale: 2;
-
-}
-
-#btn_coca_cola img:hover {
-    transform: translateY(-50%) scale(1.3) rotate(45deg);
-    transition: transform 0.3s;
-}
-
-
-#btn_coca_cola:hover .fa-solid.fa-droplet {
-  opacity: 1;
-}
-
-#btn_coca_cola img:active {
-    transform: translateY(-50%) scale(0.9) rotate(-360deg);
-    transition: transform 0.1s;
-}
 
 /* Apple */
 
@@ -56,14 +23,14 @@
 
 }
 
-#btn_apple:hover {
+#btn_apple:active {
     background-image: url("images/applewobite.png");
     background-repeat: no-repeat;
     transform: translateY(100%) scale(0.9);
-    transition: transform 0.3s;
+    transition: transform 0.5s;
 }
 
-#btn_apple:active {
+#btn_apple:hover {
     background-image: url("images/apple.png");
     animation: wiggle 0.5s ease-in-out;
     background-repeat: no-repeat;
@@ -183,6 +150,41 @@
     transition: all .5s;
 }
 
+/* COCA COLA */
+
+
+#btn_coca_cola img {
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+}
+.fa-solid.fa-droplet {
+    position: relative;
+    top: 40px;
+    left: 25px;
+    opacity: 0;
+    color: #651414;
+    scale: 2;
+
+}
+
+#btn_coca_cola img:hover {
+    transform: translateY(-50%) scale(1.3) rotate(45deg);
+    transition: transform 0.3s;
+}
+
+
+#btn_coca_cola:hover .fa-solid.fa-droplet {
+  opacity: 1;
+}
+
+#btn_coca_cola img:active {
+    transform: translateY(-50%) scale(0.9) rotate(-360deg);
+    transition: transform 0.1s;
+}
+
 /* The New Yorker */
 
 #btn_new_yorker {
@@ -274,24 +276,24 @@
 /* Instagram */
 
 #btn_instagram .bwinstagram{
-    position: absolute;
-    left: 145px;
-    transform: translateY(138%);
-    width: 90px;
+    position: relative;
+    left: -30px;
+    transform: translateY(170%);
+    width: 100px;
 }
 
 #btn_instagram .instagram{
-    position: absolute;
-    opacity: 0;
-    left: 165px;
-    transform: translateY(200%);
+    position: relative;
+    opacity: .5;
+    left: 50px;
+    transform: translateY(175%);
     width: 50px;
 }
 
 #btn_instagram .instagramwords {
-    position: absolute;
-    left: 120px;
-    transform: translateY(250%);
+    position: relative;
+
+    transform: translateY(100%);
     opacity: 0;
     width: 120px;
     z-index: -3;
@@ -299,7 +301,7 @@
 
 #btn_instagram:hover .instagram {
     opacity: 1;
-    transform: translateY(205%) translateX(-120%) scale(.8);
+    transform: translateY(180%) translateX(-130%) scale(.8);
     transition: all .3s;
 }
 #btn_instagram:hover .bwinstagram {
@@ -309,6 +311,37 @@
 
 #btn_instagram:hover .instagramwords {
     opacity: 1;
-    transform: translateY(250%) translateX(30%);
+    transform: translateY(100%) translateX(20%);
     transition: all 1s;
+}
+
+/* Old Navy */
+
+#btn_old_navy .oldnavy{
+    position: relative;
+    transform: translateY(153%);
+    opacity: 1;
+    width: 200px;
+}
+
+#btn_old_navy .oldnavyorange{
+    position: relative;
+    transform: translateY(100%);
+    width: 158px;
+    z-index: -3;
+}
+
+#btn_old_navy:hover .oldnavy {
+    opacity: 0;
+    transition: all .2s;
+}
+
+#btn_old_navy:hover .oldnavyorange {
+    transform: translateY(100%) scale(1.2);
+    transition: all .3s;
+}
+
+#btn_old_navy:active .oldnavyorange {
+    transform: translateY(100%) scale(0.3);
+    transition: all .3s;
 }
