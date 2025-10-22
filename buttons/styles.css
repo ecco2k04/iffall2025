@@ -1,0 +1,314 @@
+/* COCA COLA */
+
+
+#btn_coca_cola img {
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+}
+.fa-solid.fa-droplet {
+    position: relative;
+    top: 40px;
+    left: 25px;
+    opacity: 0;
+    color: #651414;
+    scale: 2;
+
+}
+
+#btn_coca_cola img:hover {
+    transform: translateY(-50%) scale(1.3) rotate(45deg);
+    transition: transform 0.3s;
+}
+
+
+#btn_coca_cola:hover .fa-solid.fa-droplet {
+  opacity: 1;
+}
+
+#btn_coca_cola img:active {
+    transform: translateY(-50%) scale(0.9) rotate(-360deg);
+    transition: transform 0.1s;
+}
+
+/* Apple */
+
+
+@keyframes wiggle {
+  0%   { transform: translateY(100%) scale(1.3) rotate(0deg); }
+  15%  { transform: translateY(100%) scale(1.3) rotate(-10deg); }
+  30%  { transform: translateY(100%) scale(1.3) rotate(10deg); }
+  45%  { transform: translateY(100%) scale(1.3) rotate(-8deg); }
+  60%  { transform: translateY(100%) scale(1.3) rotate(8deg); }
+  75%  { transform: translateY(100%) scale(1.3) rotate(-4deg); }
+  100% { transform: translateY(100%) scale(1.3) rotate(0deg); }
+}
+
+#btn_apple {
+    display: inline-block;
+    transform: translateY(100%);
+    width: 80px;   
+    height: 80px;
+    background-image: url("images/applewobite.png");
+    background-size: contain;
+
+}
+
+#btn_apple:hover {
+    background-image: url("images/applewobite.png");
+    background-repeat: no-repeat;
+    transform: translateY(100%) scale(0.9);
+    transition: transform 0.3s;
+}
+
+#btn_apple:active {
+    background-image: url("images/apple.png");
+    animation: wiggle 0.5s ease-in-out;
+    background-repeat: no-repeat;
+}
+
+/* IDEO */
+
+#btn_ideo {
+    display: inline-block;
+    transform: translateY(30%);
+    width: 180px;   
+    height: 180px;
+    background-image: url("images/ideo.jpg");
+    background-size: contain;
+
+}
+
+#btn_ideo:hover {
+    background-image: url("images/ideoblue.png");
+    box-shadow: 10px 10px 20px #000000;
+    transform: translateY(30%) scale(0.9);
+    transition: transform 0.3s;
+}
+
+/* Cartoon Network */
+#btn_cn {
+    display: inline-block;
+    transform: translateY(30%);
+}
+
+#btn_cn img {
+    position: fixed;
+    left: -80px;
+    transform: translateY(60%);
+    transition: transform 0.4s ease;
+}
+
+.cn_logo {
+    width: 180px;
+    height: 108px;
+    z-index: 2;
+}
+
+.cartoon_network {
+    opacity: 0;
+    z-index: 1;
+    width: 180px;
+}
+
+#btn_cn:hover .cn_logo {
+    transform: translateY(60%) scale(1.2);
+}
+
+#btn_cn:hover .cartoon_network {
+    opacity: 1;
+    transform: translateY(70%) scale(1.4);
+}
+
+
+/* NIKE */
+
+#btn_nike {
+    display: inline-block;
+    transform: translateY(-200%);
+}
+
+#btn_nike img {
+    position: fixed;
+    left: -80px;
+    transform: translateY(20%);
+    transition: transform 0.4s ease;
+}
+
+.swoosh {
+    width: 180px;
+    height: 180px;
+    z-index: 2;
+}
+
+.justdoit {
+    position: fixed;
+    top: 70px;
+    opacity: 0;
+    z-index: 1;
+    width: 100px;
+    transform: translateY(70%);
+}
+
+#btn_nike:hover .swoosh {
+    transform: translateY(20%) translateX(-20%);
+}
+
+#btn_nike:hover .justdoit {
+    opacity: 1;
+    transform: translateX(60%) translateY(20%);
+}
+
+/* facebook */
+
+#btn_facebook {
+    position: relative;
+    top: 40%;
+    padding: 15px 20px;
+    background-color: #39569C;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    border-radius: 100px;
+    text-decoration: none;
+}
+
+#btn_facebook:hover {
+    background-color: #e1e1e1;
+    transform: scale(1.3);
+    color: #39569C;
+    border: 2px solid #39569C;
+    transition: all .5s;
+}
+
+/* The New Yorker */
+
+#btn_new_yorker {
+    position: relative;
+    top: 40%;
+    padding: 15px 20px;
+    color: #000000;
+    font-family: 'Cygnet', sans-serif;
+    text-align: center;
+    border-radius: 100px;
+    text-decoration: none;
+}
+
+#btn_new_yorker:hover {
+    background-color: #f1f1f1;
+    padding-right: 60px;
+    transform: scale(1.3);
+    color: #000000;
+    transition: all .5s;
+}
+
+#btn_new_yorker img {
+    position: absolute;
+    left: 198px;
+    opacity: 0;
+    width: 38px;
+    z-index: 1; 
+}
+
+#btn_new_yorker:hover img {
+    opacity: 1;
+    transition: opacity .5s;
+}
+
+/* NPR */
+#btn_npr {
+    position: relative;
+    top: 40%;
+    padding: 15px 20px;
+    color: #000000;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 100px;
+    text-decoration: none;
+}
+
+
+#btn_npr .n {
+    position: absolute;
+    left: 32px;
+    opacity: 0;
+    width: 60px;
+    z-index: 0; 
+}
+
+#btn_npr .p {
+    position: absolute;
+    left: 32px;
+    opacity: 0;
+    width: 60px;
+    z-index: 1; 
+}
+
+#btn_npr .r {
+    position: absolute;
+    left: 32px;
+    opacity: 0;
+    width: 60px;
+    z-index: 0; 
+}
+
+#btn_npr:hover .p {
+    opacity: 1;
+}
+
+#btn_npr:hover .n {
+    opacity: 1;
+    transform: translateX(-60px);
+    transition: all .5s;
+}
+
+#btn_npr:hover .r {
+    opacity: 1;
+    transform: translateX(60px);
+    transition: all .5s;
+}
+
+/* Instagram */
+
+#btn_instagram .bwinstagram{
+    position: absolute;
+    left: 145px;
+    transform: translateY(138%);
+    width: 90px;
+}
+
+#btn_instagram .instagram{
+    position: absolute;
+    opacity: 0;
+    left: 165px;
+    transform: translateY(200%);
+    width: 50px;
+}
+
+#btn_instagram .instagramwords {
+    position: absolute;
+    left: 120px;
+    transform: translateY(250%);
+    opacity: 0;
+    width: 120px;
+    z-index: -3;
+}
+
+#btn_instagram:hover .instagram {
+    opacity: 1;
+    transform: translateY(205%) translateX(-120%) scale(.8);
+    transition: all .3s;
+}
+#btn_instagram:hover .bwinstagram {
+    opacity: 0;
+    transform: translateY(205%) translateX(-180%) scale(1.45);
+}
+
+#btn_instagram:hover .instagramwords {
+    opacity: 1;
+    transform: translateY(250%) translateX(30%);
+    transition: all 1s;
+}
