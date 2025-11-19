@@ -1,0 +1,343 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #000000;
+    line-height: 1.8;
+    display: flex;
+    flex-direction: column;
+}
+
+/* nav bar */
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 3rem;
+        background: #fff;
+        position: sticky;
+        top: 0;
+        z-index: 10000000000;
+        order: -5
+    }
+
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        gap: 1em;
+    }
+
+    .logo a {
+        font-weight: 1000;
+        text-decoration: none;
+        color: #696969;
+    }
+
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #696969;
+            font-weight: 400;
+        }
+
+        .nav-links a:hover {
+            opacity: 0.6;
+        }
+
+        .nav-links a.active {
+            color:#000000;
+            font-weight: 600
+        }
+
+        .logo a.active{
+            color:#000000;
+        }
+
+    /* mobile menu-icon */
+        .menu-icon {
+            display: none;
+            font-size: 1.5rem;
+        }
+
+        #menu-toggle {
+            display: none;
+        }
+        
+
+    /* mobile */
+
+    @media (max-width: 767px) {
+        .menu-icon {
+            display: block;
+        }
+
+        section {
+            padding: 2rem 1.5rem;
+        }
+
+        section h1 {
+            font-size: 1.8rem;
+        }
+
+
+        .navbar {
+            padding: 1rem 1rem;
+        }
+
+        .nav-links {
+            position: absolute;
+            top: 64px;
+            width: 100%;
+            background: #ffffff;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+        }
+
+        #menu-toggle:checked + .menu-icon + .nav-links {
+            max-height: 600px;
+        }
+
+
+
+    }
+
+/* carousel */
+    .hero {
+        display: flex;
+        width: 100%;
+        padding: 0rem;
+    }
+
+    .carousel {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 3 / 1;
+    }
+
+    .carousel img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0;
+        animation: fade 9s infinite;
+    }
+
+            .carousel img:nth-child(1) {
+            animation-delay: 0s;
+            }
+            .carousel img:nth-child(2) {
+            animation-delay: 3s;
+            }
+            .carousel img:nth-child(3) {
+            animation-delay: 6s;
+            }
+
+            @keyframes fade {
+            0% { opacity: 0; }
+            10% { opacity: 1; }
+            33% { opacity: 1; }
+            43% { opacity: 0; }
+            100% { opacity: 0; }
+            }
+
+
+/* all section styling */
+    section {
+        padding: 5rem 3rem;
+    }
+
+    section h1 {
+        font-size: 3rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+
+    }
+
+    section h4 {
+        font-size: 1.5rem
+    }
+
+    section p {
+        max-width: 700px;
+        font-weight: 300;
+        font-size: 1.2rem;
+    }
+
+
+/* mobile lauout*/
+    @media (max-width: 767px) {
+
+        section {
+            padding: 2rem 1.5rem;
+        }
+
+        section h1 {
+            font-size: 1.6rem;
+        }
+        /* unflex for mobile */
+        .title {
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+
+
+                                            .hero {
+                                                order: -4;
+                                            }
+                                            .intro {
+                                                display: flex;
+                                                flex-direction: column;
+                                                order: -3;
+                                            }
+
+                                            .history {
+                                                order: -2;
+                                            }
+
+                                            .footer {
+                                                order: 4;
+                                            }
+
+
+        /* mobile carousel*/
+        
+                    .hero {
+                        width: 80%;
+                        padding: 2rem;
+                        
+                    }
+
+                    .carousel {
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                        aspect-ratio: 1 / 1.5;
+                    }
+
+                    .carousel img {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        opacity: 0;
+                        animation: fade 9s infinite;
+                        border-radius: 15px;
+                    }
+    }
+
+
+
+/* main page flex desktop */
+    .title {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 3rem;
+    }
+
+
+
+/* footer */
+footer {
+    text-align: center;
+    padding: 3rem;
+    color: #696969;
+}
+
+/* tricks page */
+    .trick-gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1rem;
+        padding: 0rem;
+        margin-top: 3rem;
+        margin-bottom: 6rem;
+
+    }
+
+    .trick {
+        display: flex;
+        flex-direction: column;
+        margin-right: 4rem;
+
+    }
+
+    .trick iframe {
+        aspect-ratio: 16 / 9;
+        border-radius: 6px;
+    }
+
+
+    .trick h3 {
+        font-size: 1rem;
+        font-weight: 300;
+        color: #000000;
+    }
+
+
+    /* mobile */
+                @media (max-width: 767px) {
+                    .trick-gallery {
+                        grid-template-columns: 1fr;
+                        gap: 1.5rem;
+                    }
+
+                    .trick iframe{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+   
+/* in-games horizontal scroll */
+    .game-gallery {
+        display: flex;
+        gap: 2rem;
+        overflow-x: auto;
+    }
+
+    .game-card {
+        flex: 0 0 auto;
+        width: 560px;
+        text-align: left;
+    }
+
+    .game-card iframe {
+        display: block;
+        width: 100%;
+        border-radius: 6px;
+    }
+
+    /* mobile responsive */
+
+            @media (max-width: 767px) {
+                .game-card iframe {
+                    width: 60%;
+                    height: 100%;
+                }
+
+                .game-card {
+                    margin-right: -250px;
+                }
+            }
+
+
+
+
+    
